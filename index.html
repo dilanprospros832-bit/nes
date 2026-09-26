@@ -1,0 +1,1513 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Vanesa ❤️</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -5;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 50, 100, .13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(180, 30, 80, .10),
+            transparent 30%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   BINTANG
+========================= */
+
+.star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+
+    background: white;
+    border-radius: 50%;
+
+    opacity: .5;
+
+    animation:
+        twinkle 3s infinite alternate;
+
+    z-index: -2;
+}
+
+@keyframes twinkle {
+
+    0% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+
+/* =========================
+   HATI TERBANG
+========================= */
+
+.heart {
+    position: fixed;
+
+    bottom: -30px;
+
+    color: #ff527b;
+
+    font-size: 18px;
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    animation:
+        floatHeart 7s linear forwards;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform:
+            translateY(0)
+            scale(.5)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            scale(1.5)
+            rotate(30deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   HALAMAN
+========================= */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 100%;
+    max-width: 850px;
+
+    background:
+        rgba(10,10,10,.88);
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    border-radius: 30px;
+
+    padding: 45px 30px;
+
+    box-shadow:
+        0 0 70px rgba(255,40,90,.08);
+
+    backdrop-filter:
+        blur(20px);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    text-align: center;
+}
+
+.label {
+    color: #ff668c;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size:
+        clamp(42px, 9vw, 75px);
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ff668c,
+            #ffffff
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.subtitle {
+    color: #aaa;
+
+    margin-top: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FOTO PEMBUKA
+========================= */
+
+.cover-photo {
+
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    margin: 30px auto;
+
+    display: block;
+
+    border:
+        2px solid #ff527b;
+
+    box-shadow:
+        0 0 40px
+        rgba(255,50,100,.3);
+
+    animation:
+        breathe 4s infinite alternate;
+}
+
+@keyframes breathe {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.04);
+    }
+}
+
+
+/* =========================
+   MUSIK
+========================= */
+
+.music-button {
+
+    background:
+        rgba(255,70,110,.08);
+
+    border:
+        1px solid #ff527b;
+
+    color: white;
+
+    padding:
+        13px 25px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.music-button:hover {
+
+    background: #ff527b;
+
+    box-shadow:
+        0 0 30px
+        rgba(255,70,110,.4);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================
+   PESAN
+========================= */
+
+.message {
+
+    max-width: 650px;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+    color: #ddd;
+
+    line-height: 2;
+
+    font-size: 16px;
+}
+
+.quote {
+
+    margin-top: 25px;
+
+    color: #ff7394;
+
+    font-size: 19px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   SLIDESHOW
+========================= */
+
+.memory-title {
+
+    text-align: center;
+
+    margin:
+        60px 0 25px;
+}
+
+.memory-title h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.memory-title p {
+
+    color: #777;
+}
+
+
+/* SLIDESHOW CONTAINER */
+
+.slideshow {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #000;
+
+    box-shadow:
+        0 0 45px
+        rgba(255,50,100,.12);
+}
+
+
+/* FOTO */
+
+.slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    transform:
+        scale(1.12);
+
+    transition:
+        opacity 1.5s ease,
+        transform 7s ease;
+}
+
+.slide.active {
+
+    opacity: 1;
+
+    transform:
+        scale(1);
+}
+
+.slide img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter:
+        blur(1.5px)
+        brightness(.65);
+}
+
+
+/* OVERLAY */
+
+.slideshow::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.85),
+            transparent 50%,
+            rgba(0,0,0,.25)
+        );
+
+    pointer-events: none;
+}
+
+
+/* TULISAN SLIDE */
+
+.slide-caption {
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 30px;
+
+    z-index: 5;
+}
+
+.slide-caption small {
+
+    color: #ff6b8e;
+
+    letter-spacing: 4px;
+}
+
+.slide-caption h3 {
+
+    margin-top: 7px;
+
+    font-size: 27px;
+}
+
+
+/* NOMOR FOTO */
+
+.photo-number {
+
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    z-index: 5;
+
+    padding:
+        8px 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(0,0,0,.45);
+
+    backdrop-filter:
+        blur(8px);
+
+    font-size: 13px;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   11 FOTO MINI
+========================= */
+
+.photo-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.photo-list img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    opacity: .45;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.photo-list img:hover {
+
+    opacity: 1;
+
+    transform:
+        scale(1.06);
+}
+
+.photo-list img.selected {
+
+    opacity: 1;
+
+    border:
+        2px solid #ff527b;
+
+    box-shadow:
+        0 0 15px
+        rgba(255,70,110,.3);
+}
+
+
+/* =========================
+   PERTANYAAN
+========================= */
+
+.question {
+
+    text-align: center;
+
+    margin-top: 65px;
+
+    padding-top: 45px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+.question h2 {
+
+    font-size:
+        clamp(28px, 6vw, 42px);
+
+    margin-bottom: 12px;
+}
+
+.question p {
+
+    color: #888;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   AREA TOMBOL
+========================= */
+
+.button-area {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 190px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+.answer {
+
+    position: absolute;
+
+    padding:
+        14px 35px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        left .25s ease,
+        top .25s ease,
+        transform .2s;
+}
+
+.yes {
+
+    left: 25%;
+    top: 65px;
+
+    color: white;
+
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff315f,
+            #ff7194
+        );
+
+    box-shadow:
+        0 0 25px
+        rgba(255,50,90,.3);
+}
+
+.no {
+
+    left: 60%;
+    top: 65px;
+
+    color: white;
+
+    background: #181818;
+
+    border:
+        1px solid #555;
+}
+
+
+/* =========================
+   HALAMAN BERHASIL
+========================= */
+
+.success {
+
+    display: none;
+
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.success-card {
+
+    max-width: 650px;
+
+    padding: 50px 30px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(15,15,15,.9);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    box-shadow:
+        0 0 70px
+        rgba(255,40,90,.12);
+}
+
+.success-card .big-heart {
+
+    font-size: 80px;
+
+    animation:
+        heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.success-card h2 {
+
+    margin:
+        20px 0;
+
+    font-size:
+        clamp(35px, 8vw, 60px);
+
+    color: #ff668c;
+}
+
+.success-card p {
+
+    color: #ccc;
+
+    line-height: 2;
+}
+
+.back {
+
+    margin-top: 30px;
+
+    padding:
+        12px 25px;
+
+    border-radius: 25px;
+
+    background: transparent;
+
+    color: white;
+
+    border:
+        1px solid #ff527b;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:600px) {
+
+    .card {
+        padding: 35px 17px;
+    }
+
+    .slideshow {
+        height: 390px;
+    }
+
+    .photo-list {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+    .photo-list img:nth-child(10),
+    .photo-list img:nth-child(11) {
+        display: block;
+    }
+
+    .slide-caption {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .slide-caption h3 {
+        font-size: 22px;
+    }
+
+    .yes {
+        left: 15%;
+    }
+
+    .no {
+        left: 55%;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MUSIK
+========================= -->
+
+<audio id="music" loop>
+
+    <source
+        src="kembalikan.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =========================
+     HALAMAN UTAMA
+========================= -->
+
+<div class="page" id="mainPage">
+
+<div class="card">
+
+
+<!-- INTRO -->
+
+<div class="intro">
+
+    <div class="label">
+        A LITTLE MESSAGE FOR YOU
+    </div>
+
+    <h1>Hai, Vanesa ❤️</h1>
+
+    <p class="subtitle">
+        Ada sesuatu yang masih ingin aku sampaikan.
+    </p>
+
+    <img
+        src="foto1.jpeg"
+        class="cover-photo">
+
+    <button
+        class="music-button"
+        onclick="toggleMusic()">
+
+        🎵
+        <span id="musicText">
+            Putar Musik
+        </span>
+
+    </button>
+
+</div>
+
+
+<!-- PESAN -->
+
+<div class="message">
+
+    <p>
+
+        Mungkin waktu sudah berjalan cukup jauh,
+        tapi ada beberapa kenangan yang ternyata
+        masih tinggal di hati.
+
+    </p>
+
+    <p style="margin-top:20px">
+
+        Aku tidak ingin memaksa kamu kembali.
+        Aku hanya ingin memberikan satu kesempatan
+        untuk kita berbicara lagi.
+
+    </p>
+
+    <div class="quote">
+
+        “Aku tidak ingin mengulang masa lalu.
+        Aku ingin membuat cerita baru bersamamu.”
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     KENANGAN
+========================= -->
+
+<div class="memory-title">
+
+    <h2>11 Kenangan Kita</h2>
+
+    <p>
+        Beberapa hal mungkin sudah berlalu,
+        tapi kenangannya tetap ada.
+    </p>
+
+</div>
+
+
+<!-- SLIDESHOW -->
+
+<div class="slideshow"
+     id="slideshow">
+
+
+    <div class="slide active">
+
+        <img src="foto2.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto3.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto4.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto5.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto6.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto7.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto8.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto9.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto10.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto11.jpeg">
+
+    </div>
+
+
+    <div class="slide">
+
+        <img src="foto1.jpeg">
+
+    </div>
+
+
+    <div class="photo-number"
+         id="photoNumber">
+
+        01 / 11
+
+    </div>
+
+
+    <div class="slide-caption">
+
+        <small>
+            OUR MEMORIES
+        </small>
+
+        <h3 id="slideText">
+            Masih tentang kita...
+        </h3>
+
+    </div>
+
+</div>
+
+
+<!-- FOTO MINI -->
+
+<div class="photo-list">
+
+    <img src="foto1.jpeg" class="selected"
+         onclick="showPhoto(0)">
+
+    <img src="foto2.jpeg"
+         onclick="showPhoto(1)">
+
+    <img src="foto3.jpeg"
+         onclick="showPhoto(2)">
+
+    <img src="foto4.jpeg"
+         onclick="showPhoto(3)">
+
+    <img src="foto5.jpeg"
+         onclick="showPhoto(4)">
+
+    <img src="foto6.jpeg"
+         onclick="showPhoto(5)">
+
+    <img src="foto7.jpeg"
+         onclick="showPhoto(6)">
+
+    <img src="foto8.jpeg"
+         onclick="showPhoto(7)">
+
+    <img src="foto9.jpeg"
+         onclick="showPhoto(8)">
+
+    <img src="foto10.jpeg"
+         onclick="showPhoto(9)">
+
+    <img src="foto11.jpeg"
+         onclick="showPhoto(10)">
+
+</div>
+
+
+<!-- =========================
+     PERTANYAAN
+========================= -->
+
+<div class="question">
+
+    <h2>
+        Kita mulai lagi?
+    </h2>
+
+    <p>
+
+        Tidak ada paksaan.
+        Aku hanya ingin tahu jawabanmu. ❤️
+
+    </p>
+
+
+    <div
+        class="button-area"
+        id="buttonArea">
+
+
+        <button
+            class="answer yes"
+            onclick="sayYes()">
+
+            IYA ❤️
+
+        </button>
+
+
+        <button
+            class="answer no"
+            id="noButton">
+
+            TIDAK
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     HALAMAN IYA
+========================= -->
+
+<div
+    class="success"
+    id="successPage">
+
+
+<div class="success-card">
+
+
+    <div class="big-heart">
+
+        ❤️
+
+    </div>
+
+
+    <h2>
+        Terima Kasih
+    </h2>
+
+
+    <p>
+
+        Kalau kamu memilih untuk mencoba lagi,
+        aku ingin menjadikan kesempatan ini
+        sebagai awal yang baru.
+
+        <br><br>
+
+        Kita tidak perlu kembali menjadi
+        seperti dulu.
+
+        <br><br>
+
+        Kita bisa membuat cerita baru,
+        belajar dari kesalahan,
+        saling mengerti,
+        dan berjalan bersama lagi,aku harap kamu tidak mebuat sesuatu yang tidak aku suka lagi, dan yang aku benci.
+
+        <br><br>
+
+        <strong>
+            Kali ini, mari kita jaga ceritanya
+            bersama-sama. ❤️
+        </strong>
+
+    </p>
+
+
+    <button
+        class="back"
+        onclick="goBack()">
+
+        ← Kembali
+
+    </button>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+
+/* =========================
+   BINTANG
+========================= */
+
+for(let i = 0; i < 100; i++){
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "vw";
+
+    star.style.top =
+        Math.random() * 100 + "vh";
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    document.body.appendChild(star);
+
+}
+
+
+/* =========================
+   MUSIK
+========================= */
+
+const music =
+    document.getElementById("music");
+
+const musicText =
+    document.getElementById("musicText");
+
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play();
+
+        musicText.innerText =
+            "Pause Musik";
+
+    }
+
+    else{
+
+        music.pause();
+
+        musicText.innerText =
+            "Putar Musik";
+
+    }
+
+}
+
+
+/* =========================
+   SLIDESHOW
+========================= */
+
+const slides =
+    document.querySelectorAll(".slide");
+
+const thumbnails =
+    document.querySelectorAll(".photo-list img");
+
+const photoNumber =
+    document.getElementById("photoNumber");
+
+const slideText =
+    document.getElementById("slideText");
+
+
+const texts = [
+
+    "Masih tentang kita...",
+
+    "Senyum yang masih aku ingat.",
+
+    "Tentang hari-hari yang pernah kita lewati.",
+
+    "Tentang cerita yang pernah kita punya.",
+
+    "Ada banyak hal yang tidak terlupakan.",
+
+    "Waktu terus berjalan...",
+
+    "Tapi beberapa kenangan tetap tinggal.",
+
+    "Mungkin kita pernah salah.",
+
+    "Mungkin kita pernah terluka.",
+
+    "Tapi aku masih menghargai semua kenangan.",
+
+    "Dan mungkin... kita bisa mencoba lagi ❤️"
+
+];
+
+
+let currentSlide = 0;
+
+
+function showPhoto(index){
+
+    slides[currentSlide]
+        .classList.remove("active");
+
+    thumbnails[currentSlide]
+        .classList.remove("selected");
+
+
+    currentSlide = index;
+
+
+    slides[currentSlide]
+        .classList.add("active");
+
+    thumbnails[currentSlide]
+        .classList.add("selected");
+
+
+    photoNumber.innerText =
+        String(currentSlide + 1).padStart(2,"0")
+        + " / 11";
+
+
+    slideText.innerText =
+        texts[currentSlide];
+
+}
+
+
+function nextSlide(){
+
+    let next =
+        currentSlide + 1;
+
+    if(next >= slides.length){
+
+        next = 0;
+
+    }
+
+    showPhoto(next);
+
+}
+
+
+/* Ganti foto setiap 5 detik */
+
+setInterval(
+    nextSlide,
+    5000
+);
+
+
+/* =========================
+   TOMBOL TIDAK
+========================= */
+
+const noButton =
+    document.getElementById("noButton");
+
+const buttonArea =
+    document.getElementById("buttonArea");
+
+
+function moveNoButton(){
+
+    const maxX =
+        buttonArea.clientWidth
+        - noButton.offsetWidth
+        - 10;
+
+    const maxY =
+        buttonArea.clientHeight
+        - noButton.offsetHeight
+        - 10;
+
+
+    const randomX =
+        Math.max(
+            5,
+            Math.random() * maxX
+        );
+
+
+    const randomY =
+        Math.max(
+            5,
+            Math.random() * maxY
+        );
+
+
+    noButton.style.left =
+        randomX + "px";
+
+    noButton.style.top =
+        randomY + "px";
+
+}
+
+
+/* Komputer */
+
+noButton.addEventListener(
+    "mouseenter",
+    moveNoButton
+);
+
+
+/* HP */
+
+noButton.addEventListener(
+    "touchstart",
+    function(e){
+
+        e.preventDefault();
+
+        moveNoButton();
+
+    }
+);
+
+
+/* Klik */
+
+noButton.addEventListener(
+    "click",
+    moveNoButton
+);
+
+
+/* =========================
+   TOMBOL IYA
+========================= */
+
+function sayYes(){
+
+    document.getElementById(
+        "mainPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "successPage"
+    ).style.display = "flex";
+
+
+    createHearts(35);
+
+}
+
+
+/* =========================
+   KEMBALI
+========================= */
+
+function goBack(){
+
+    document.getElementById(
+        "successPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "mainPage"
+    ).style.display = "flex";
+
+}
+
+
+/* =========================
+   HATI
+========================= */
+
+function createHearts(amount){
+
+    for(let i = 0; i < amount; i++){
+
+        setTimeout(() => {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "heart";
+
+            heart.innerText =
+                Math.random() > .5
+                ? "❤️"
+                : "♡";
+
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+
+            heart.style.animationDuration =
+                (4 + Math.random() * 5)
+                + "s";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 9000);
+
+
+        }, i * 120);
+
+    }
+
+}
+
+
+/* HATI OTOMATIS */
+
+setInterval(() => {
+
+    createHearts(1);
+
+}, 1800);
+
+
+</script>
+
+</body>
+</html>
+```
